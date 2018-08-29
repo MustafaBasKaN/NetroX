@@ -15,7 +15,7 @@ exports.conf = {
   enabled: true,
   guildOnly: false,
   aliases: ['duyuryap', 'duyur'],
-  permLevel: 2
+  permLevel: 3
 };
 
 exports.help = {

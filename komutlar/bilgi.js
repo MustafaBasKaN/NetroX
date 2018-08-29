@@ -6,7 +6,7 @@ exports.run = (client, message) => {
     const pingozel = new Discord.RichEmbed()
     .setColor(0x00AE86)
     .setAuthor(message.author.username, message.author.avatarURL)
-    .setDescription('08.08.2018 Tarihinde MustafaBasKaN#3110 Tarafından Yapılmıştır. Diğer Bütün Bilgiler İçin p!yardım');
+    .setDescription('08.08.2018 Tarihinde MustafaBasKaN#3110 Ve NetroX Corp. Tarafından Yapılmıştır. Diğer Bütün Bilgiler İçin n!yardım');
     return message.channel.sendEmbed(pingozel)
 };
 

@@ -28,7 +28,7 @@ fs.readdir('./komutlar/', (err, files) => {
 });
 
 client.on('guildMemberAdd', member => {
-  const channel = member.guild.channels.find('name', 'hosgeldin');
+  const channel = member.guild.channels.find('name', 'uzaylılarhoşgeldiniz');
   if (!channel) return;
     const hg = new Discord.RichEmbed()
     .setColor('RANDOM')
@@ -38,7 +38,7 @@ client.on('guildMemberAdd', member => {
 });
 
 client.on('guildMemberRemove', member => {
-  const channel = member.guild.channels.find('name', 'hosgeldin');
+  const channel = member.guild.channels.find('name', 'uzaylılarhoşgeldiniz');
   if (!channel) return;
      const bb = new Discord.RichEmbed()
     .setColor('RANDOM')

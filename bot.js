@@ -37,6 +37,21 @@ client.on('guildMemberAdd', member => {
     return channel.sendEmbed(hg);
 });
 
+client.on("message", msg => {
+        const reklam = ["amk", "sg", "siktir git", "amcık", "anneni sikeyim", "oç", "orospu çocuğu", "orospu evladı", "annesiz piç"];
+        if (reklam.some(word => msg.content.includes(word))) {
+          try {
+             if (!msg.member.hasPermission("BAN_MEMBERS")) {
+                  msg.delete();
+
+                  return msg.reply('Küfür Etmemelisin! ⚠').then(msg => msg.delete(3000));
+             }              
+          } catch(err) {
+            console.log(err);
+          }
+        }
+    });
+
 client.on('guildMemberRemove', member => {
   const channel = member.guild.channels.find('name', 'uzaylılarhoşgeldiniz');
   if (!channel) return;

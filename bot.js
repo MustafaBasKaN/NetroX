@@ -52,6 +52,16 @@ client.on('guildMemberAdd', member => {
     return channel.sendEmbed(hg);
 });
 
+client.on('message', msg => {
+
+  if (msg.content.toLowerCase() === 'n!ip') {
+
+    msg.channel.send(':white_check_mark: Sunucumuzun İp Adresi : **185.193.165.189** ');
+
+  }
+
+});
+
 client.on("message", msg => {
         const reklam = ["amk", "sg", "siktir git", "amcık", "anneni sikeyim", "oç", "orospu çocuğu", "orospu evladı", "annesiz piç"];
         if (reklam.some(word => msg.content.includes(word))) {
